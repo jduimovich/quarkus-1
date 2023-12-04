@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:   
+  annotations:  
+    tad.gitops.set/image: ".spec.template.spec.containers[0].image"
+    tad.gitops.get/image: ".spec.template.spec.containers[0].image"
+    tad.gitops.set/replicas: ".spec.replicas"
+    tad.gitops.get/replicas: ".spec.replicas" 
+  name: q
+  namespace:  quarkus-1
+spec:
+  replicas: 1 
+  template: 
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/bootstrap:6087a60023ecbec3f7d3aa0e5f4bbcd62ec53980
+        name: container-image  
+
