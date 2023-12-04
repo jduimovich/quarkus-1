@@ -9,7 +9,7 @@ metadata:
   namespace: quarkus-1
 spec:
   port:
-    targetPort: 8080
+    targetPort: 8081
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge
