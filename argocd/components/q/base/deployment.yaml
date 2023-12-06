@@ -24,7 +24,7 @@ spec:
         app.kubernetes.io/instance: q
     spec:
       containers:
-        - image: quay.io/jduimovich0/bootstrap
+        - image: quay.io/jduimovich0/bootstrap:latest
           imagePullPolicy: Always
           livenessProbe:
             httpGet:

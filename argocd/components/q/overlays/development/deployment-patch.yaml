@@ -13,5 +13,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/jduimovich0/bootstrap
+        - image: quay.io/jduimovich0/bootstrap:latest
           name: container-image
