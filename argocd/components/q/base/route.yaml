@@ -2,10 +2,10 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata: 
   labels: 
-    app.kubernetes.io/instance: q2
+    app.kubernetes.io/instance: q
     app.kubernetes.io/managed-by: kustomize
-    app.kubernetes.io/name: q2 
-  name: q2
+    app.kubernetes.io/name: q 
+  name: q
   namespace: quarkus-1
 spec:
   port:
@@ -15,6 +15,6 @@ spec:
     termination: edge
   to:
     kind: Service
-    name: q2
+    name: q
     weight: 100 
 

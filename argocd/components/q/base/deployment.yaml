@@ -7,24 +7,24 @@ metadata:
     tad.gitops.set/replicas: ".spec.replicas"
     tad.gitops.get/replicas: ".spec.replicas" 
   labels: 
-    app.kubernetes.io/instance: q2
+    app.kubernetes.io/instance: q
     app.kubernetes.io/managed-by: kustomize
-    app.kubernetes.io/name:  q2
+    app.kubernetes.io/name:  q
     app.kubernetes.io/part-of: quarkus-1  
-  name: q2
+  name: q
   namespace: quarkus-1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/instance:  q2 
+      app.kubernetes.io/instance:  q 
   template:
     metadata: 
       labels:
-        app.kubernetes.io/instance:  q2
+        app.kubernetes.io/instance:  q
     spec:
       containers:
-      - image: quay.io/jduimovich0/bootstrap:30047bd0241f00a41fd75e3129d1c2366cfcfd00
+      - image: quay.io/jduimovich/bootstrap:30047bd0241f00a41fd75e3129d1c2366cfcfd00
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
