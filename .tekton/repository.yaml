@@ -1,9 +1,0 @@
-apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
-kind: Repository
-metadata:
-  name: quarkus
-  namespace:  dance-kickoff
-spec:
-  url: github.com?owner=jduimovich&repo=quarkus-1
-
-  
